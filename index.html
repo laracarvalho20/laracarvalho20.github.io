@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title> Formulário </title>
+</head>
+<body>
+    
+    <h1>Cadastro de Players Games</h1>
+
+    <div class="box">
+        <form action="https://formsubmit.co/carvalholara2010@gmail.com" method="POST" enctype="multipart/form-data">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <br><br>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <label for="foto">Foto:</label>
+            <input type="file" name="foto" id="foto" accept=".jpg,.png,.jpeg">
+            <br><br>
+            <span>Gênero:</span>
+            <input type="radio" name="genero" id="m" value="m">
+            <label for="m">M</label>
+            <input type="radio" name="genero" id="f" value="f">
+            <label for="f">F</label>
+            <input type="radio" name="genero" id="o" value="o">
+            <label for="o">Outros</label>
+            <br><br>
+    <label for="estado"> Estado </label>
+    <select name="estado" id="estado">
+        <option value="">Escolha seu Estado</option>
+        <option value="ba">BA</option>
+        <option value="ce">CE</option>
+        <option value="rj">RJ</option>
+        <option value="sp">SP</option>
+
+    </select>
+    <br><br>
+    <label for ="comentario" > Comentário: </label> <br>
+    <textarea name="comentario" id="comentario" ></textarea>
+<br><br>
+    <input type="submit" value="Enviar" nome="submit"> 
+
+    <input type="hidden" name="_captcha" value="false">
+    <!-- desativa o _captcha -->
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+    <input type="hidden" name="_template" value="table">
+
+
+
+
+</form>
+    </div>
+
+</body>
+</html>
